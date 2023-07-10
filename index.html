@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: blue;
+        }
+        form{
+            border: 2px solid black;
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rollnumber,class,section,department,name,college of the student</h1>
+    <table>
+        <tr>
+            <th>Roll number</th>
+            <th>class</th>
+            <th>section</th>
+            <th>department</th>
+            <th>name</th>
+            <th>college</th>
+         </tr>
+        <tr>
+            <td>13</td>
+            <td>2nd sem</td>
+            <td>H</td>
+            <td>cse(cys)</td>
+            <td>Indira Paul</td>
+            <td>msit</td>
+
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>2nd sem</td>
+            <td>D</td>
+            <td>information technology</td>
+            <td>Gourab Ghosh</td>
+            <td>msit</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <form>
+        <br>
+        <label for = "Name">
+            Name:
+        </label>
+        <input type = "text" id = name>
+        <br><br>
+        <label for = "department">
+            Department:
+        </label>
+        <input type = "text" id = department>
+        <br><br>
+        <label for = "roll number">
+            Roll number:
+        </label>
+        <input type = "number" id = roll>
+        <br><br>
+        <button id = "button" onclick="myFunction()">Submit</button>
+    </form>
+    <script>
+        function myFunction(){
+            document.getElementById("button").innerHTML = "Submitted"
+        }
+    </script>
+</body>
+</html>
